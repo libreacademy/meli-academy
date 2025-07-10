@@ -1,645 +1,649 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Libre Academy - Aprende ventas digitales sin riesgo financiero">
-        <meta name="author" content="Libre Academy">
-        <title>Libre Academy - Educación Digital Sin Riesgo</title>
-        
-        <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JR4NMYZ0ZE"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-JR4NMYZ0ZE');
-        </script>
-        
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet">
-        <!-- Fonts CSS-->
-        <link rel="stylesheet" href="css/heading.css">
-        <link rel="stylesheet" href="css/body.css">
-        
-        <!-- Custom color overrides -->
-        <style>
-            :root {
-                --primary: #2e3170 !important;
-                --secondary: #ffe600 !important;
-            }
-            
-            .bg-primary {
-                background-color: #2e3170 !important;
-            }
-            
-            .bg-secondary {
-                background-color: #ffe600 !important;
-            }
-            
-            .text-primary {
-                color: #2e3170 !important;
-            }
-            
-            .text-secondary {
-                color: #2c3e50 !important;
-            }
-            
-            .btn-primary {
-                background-color: #2e3170 !important;
-                border-color: #2e3170 !important;
-                color: #ffffff;
-            }
-            
-            .btn-primary:hover {
-                background-color: #2968c8 !important;
-                border-color: #2968c8 !important;
-            }
-            
-            .navbar-brand {
-                color: #2e3170 !important;
-            }
-            
-            /* Plan cards custom styling */
-            .plan-card {
-                background: white;
-                border-radius: 15px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-                margin-bottom: 30px;
-                overflow: hidden;
-                transition: transform 0.3s ease;
-            }
-            
-            .plan-card:hover {
-                transform: translateY(-5px);
-            }
-            
-            .plan-card.featured {
-                border: 5px solid #ffe600;
-                transform: scale(1.05);
-            }
-            
-            .plan-header {
-                background: linear-gradient(142deg, #2e3170, #2a5c96);
-                color: white;
-                padding: 30px;
-                text-align: center;
-            }
-            
-            .plan-name {
-                font-size: 1.5rem;
-                font-weight: 700;
-                margin-bottom: 10px;
-            }
-            
-            .plan-price {
-                font-size: 2.5rem;
-                font-weight: 800;
-                margin-bottom: 5px;
-            }
-            
-            .plan-price-detail {
-                opacity: 0.9;
-                font-size: 0.9rem;
-            }
-            
-            .plan-body {
-                padding: 30px;
-            }
-            
-            .plan-features {
-                list-style: none;
-                padding: 0;
-                margin: 20px 0;
-            }
-            
-            .plan-features li {
-                padding: 8px 0;
-                position: relative;
-                padding-left: 30px;
-            }
-            
-            .plan-features li::before {
-                content: '✓';
-                position: absolute;
-                left: 0;
-                color: #28a745;
-                font-weight: bold;
-            }
-            
-            .value-prop-card {
-                background: white;
-                border-radius: 15px;
-                padding: 30px;
-                text-align: center;
-                box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-                margin-bottom: 30px;
-                transition: transform 0.3s ease;
-            }
-            
-            .value-prop-card:hover {
-                transform: translateY(-5px);
-            }
-            
-            .value-prop-icon {
-                font-size: 3rem;
-                margin-bottom: 20px;
-                color: #2e3170;
-            }
-            
-            .step {
-                text-align: center;
-                margin: 8px;
-            }
-            
-            .step-number {
-                background: #2e3170;
-                color: white;
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 1.5rem;
-                font-weight: bold;
-                margin: 0 auto 20px;
-            }
-            
-            .guarantee {
-                background: white;
-                color: #2e3170;
-                padding: 40px;
-                border-radius: 15px;
-                text-align: center;
-                margin: 40px 0;
-            }
-            
-            /* Estilos personalizados para el menú de navegación */
-            .navbar-nav .nav-link {
-                color: #2e3170 !important;
-                font-weight: 600;
-                transition: all 0.3s ease;
-            }
-            
-            .navbar-nav .nav-link:hover,
-            .navbar-nav .nav-link:focus {
-                color: #ffffff !important;
-                background-color: #2e3170 !important;
-                border-radius: 5px;
-            }
-            
-            .navbar-nav .nav-link.active,
-            .navbar-nav .active > .nav-link {
-                color: #ffffff !important;
-                background-color: #2e3170 !important;
-                border-radius: 5px;
-            }
 
-            .step-card {
-                background-color: white;
-                color: #2e3170;
-                border-radius: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: transform 0.3s ease;
-            }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Libre Academy - Aprende ventas digitales sin riesgo financiero">
+    <meta name="author" content="Libre Academy">
+    <title>Libre Academy - Educación Digital Sin Riesgo</title>
 
-            .container-steps{
-                gap: 1.25rem;
-                    align-content: center;
-    justify-content: center;
-            }
-        </style>
-    </head>
-    <body id="page-top">
-        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">👨‍🏫 LIBRE ACADEMY</a>
-                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#beneficios">BENEFICIOS</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#como-funciona">CÓMO FUNCIONA</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#planes">PLANES</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTACTO</a>
-                        </li>
-                    </ul>
-                </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JR4NMYZ0ZE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-JR4NMYZ0ZE');
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/heading.css">
+    <link rel="stylesheet" href="css/body.css">
+
+    <style>
+        :root {
+            --primary: #2e3170 !important;
+            --secondary: #ffe600 !important;
+        }
+
+        .bg-primary {
+            background-color: #2e3170 !important;
+        }
+
+        .bg-secondary {
+            background-color: #ffe600 !important;
+        }
+
+        .text-primary {
+            color: #2e3170 !important;
+        }
+
+        .text-secondary {
+            color: #2c3e50 !important;
+        }
+
+        .btn-primary {
+            background-color: #2e3170 !important;
+            border-color: #2e3170 !important;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #2968c8 !important;
+            border-color: #2968c8 !important;
+        }
+
+        .navbar-brand {
+            color: #2e3170 !important;
+        }
+
+        /* Plan cards custom styling */
+        .plan-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .plan-card.featured {
+            border: 5px solid #ffe600;
+            transform: scale(1.05);
+        }
+
+        .plan-header {
+            background: linear-gradient(142deg, #2e3170, #2a5c96);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .plan-price-detail {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .plan-body {
+            padding: 30px;
+        }
+
+        .plan-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .plan-features li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .plan-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .value-prop-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .value-prop-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .value-prop-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #2e3170;
+        }
+
+        .step {
+            text-align: center;
+            margin: 8px;
+        }
+
+        .step-number {
+            background: #2e3170;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+
+        .guarantee {
+            background: white;
+            color: #2e3170;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        /* Estilos personalizados para el menú de navegación */
+        .navbar-nav .nav-link {
+            color: #2e3170 !important;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link:focus {
+            color: #ffffff !important;
+            background-color: #2e3170 !important;
+            border-radius: 5px;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .active>.nav-link {
+            color: #ffffff !important;
+            background-color: #2e3170 !important;
+            border-radius: 5px;
+        }
+
+        .step-card {
+            background-color: white;
+            color: #2e3170;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .container-steps {
+            gap: 1.25rem;
+            align-content: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">👨‍🏫 LIBRE ACADEMY</a>
+            <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#beneficios">BENEFICIOS</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#como-funciona">CÓMO
+                            FUNCIONA</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#planes">PLANES</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTACTO</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <div class="masthead-avatar mb-5" style="font-size: 8rem;">👨‍💻</div>
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading mb-0">APRENDE VENTAS DIGITALES</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Sin Riesgo Financiero - Solo Pagas Cuando Generas Resultados</p>
-                <div class="mt-4">
-                    <a class="btn btn-outline-light btn-xl js-scroll-trigger" href="#planes" onclick="trackCTAClick('hero_main')">
-                        <i class="fas fa-rocket mr-2"></i>Ver Planes Disponibles
-                    </a>
-                </div>
-            </div>
-        </header>
-        
-        <section class="page-section portfolio" id="beneficios">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading text-secondary mb-0 d-inline-block">¿POR QUÉ LIBRE ACADEMY?</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="value-prop-card">
-                            <div class="value-prop-icon">💰</div>
-                            <h4>Sin Riesgo Financiero</h4>
-                            <p>Sin matrícula, sin mensualidades. Solo pagas cuando empieces a vender. Tu inversión está garantizada por tus propios resultados.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="value-prop-card">
-                            <div class="value-prop-icon">📈</div>
-                            <h4>Cobro por Resultados</h4>
-                            <p>15% de tus primeros $500 USD en ventas. Si no vendes, no pagas. Alineamos nuestro éxito con el tuyo.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="value-prop-card">
-                            <div class="value-prop-icon">🎯</div>
-                            <h4>Para Profesionales Técnicos</h4>
-                            <p>Cursos diseñados específicamente para ingenieros, desarrolladores y analistas que buscan diversificar ingresos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="page-section bg-primary text-white mb-0" id="como-funciona">
-            <div class="container">
-                <!-- About Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading d-inline-block text-white">¿CÓMO FUNCIONA?</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-12 text-center mb-4">
-                        <p class="pre-wrap lead">5 pasos simples hacia tu éxito en ventas digitales</p>
-                    </div>
-                </div>
-                <div class="row container-steps">
-                    <div class="col-lg-2 col-md-4 col-6 step-card">
-                        <div class="step">
-                            <div class="step-number">1</div>
-                            <p><strong>Te Inscribes</strong><br />100% gratis</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 step-card">
-                        <div class="step">
-                            <div class="step-number">2</div>
-                            <p><strong>Aprendes</strong><br />Estrategias reales</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 step-card">
-                        <div class="step">
-                            <div class="step-number">3</div>
-                            <p><strong>Implementas</strong><br />En Mercado Libre</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 step-card">
-                        <div class="step">
-                            <div class="step-number">4</div>
-                            <p><strong>Generas ventas</strong><br />Resultados reales</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 step-card">
-                        <div class="step">
-                            <div class="step-number">5</div>
-                            <p><strong>Pagas solo entonces</strong><br />15% de $500 USD</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="guarantee">
-                    <h3>🛡️ Garantía Total</h3>
-                    <p>Si no generas al menos $500 USD en ventas en 6 meses, no pagas absolutamente nada.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="page-section" id="planes">
-            <div class="container">
-                <!-- Plans Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading text-secondary mb-0 d-inline-block">ELIGE TU PLAN</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Plans Content-->
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center mb-4">
-                        <p class="lead text-muted">Todos nuestros planes están diseñados para que solo pagues cuando generes resultados</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="plan-card">
-                            <div class="plan-header">
-                                <h3 class="plan-name">Plan Básico</h3>
-                                <div class="plan-price">15%</div>
-                                <div class="plan-price-detail">Solo de tus primeros $500 USD</div>
-                            </div>
-                            <div class="plan-body">
-                                <p class="text-muted mb-3">Perfecto para empezar. Aprende los fundamentos de las ventas digitales en Mercado Libre.</p>
-                                
-                                <ul class="plan-features">
-                                    <li>Acceso a curso básico</li>
-                                    <li>Soporte por email</li>
-                                    <li>Comunidad de estudiantes</li>
-                                    <li>Materiales descargables</li>
-                                    <li>Garantía de resultados</li>
-                                </ul>
-                                
-                                <button class="btn btn-primary btn-block" onclick="trackPlanClick('basico')">
-                                    Comenzar Ahora
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6">
-                        <div class="plan-card featured">
-                            <div class="plan-header">
-                                <h3 class="plan-name">Plan Profesional</h3>
-                                <div class="plan-price">20%</div>
-                                <div class="plan-price-detail">Solo de tus primeros $1000 USD</div>
-                            </div>
-                            <div class="plan-body">
-                                <p class="text-muted mb-3">Para quienes buscan resultados más ambiciosos. Incluye mentoría personalizada.</p>
-                                
-                                <ul class="plan-features">
-                                    <li>Todo del Plan Básico</li>
-                                    <li>Mentoría 1 a 1</li>
-                                    <li>Soporte prioritario</li>
-                                    <li>Casos de estudio avanzados</li>
-                                    <li>Acceso a masterclasses</li>
-                                    <li>Garantía extendida</li>
-                                </ul>
-                                
-                                <button class="btn btn-primary btn-block" onclick="trackPlanClick('profesional')">
-                                    Elegir Profesional
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6">
-                        <div class="plan-card">
-                            <div class="plan-header">
-                                <h3 class="plan-name">Plan Elite</h3>
-                                <div class="plan-price">25%</div>
-                                <div class="plan-price-detail">Solo de tus primeros $2000 USD</div>
-                            </div>
-                            <div class="plan-body">
-                                <p class="text-muted mb-3">Para profesionales que quieren maximizar sus ingresos con estrategias avanzadas.</p>
-                                
-                                <ul class="plan-features">
-                                    <li>Todo del Plan Profesional</li>
-                                    <li>Coaching grupal semanal</li>
-                                    <li>Acceso VIP a recursos</li>
-                                    <li>Red de contactos exclusiva</li>
-                                    <li>Certificación profesional</li>
-                                    <li>Soporte durante 12 meses</li>
-                                </ul>
-                                
-                                <button class="btn btn-primary btn-block" onclick="trackPlanClick('elite')">
-                                    Acceder a Elite
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">CONTACTO</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Content-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
-                            <div class="text-muted">Teléfono</div>
-                            <div class="lead font-weight-bold">+57 (1) 234-5678</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
-                            <div class="text-muted">Email</div>
-                            <div class="lead font-weight-bold">info@libreacademy.com</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="text-muted">Ubicación</div>
-                            <div class="lead font-weight-bold">Bogotá, Colombia</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-4">
-                    <a class="btn btn-primary btn-xl" href="#planes" onclick="trackContactClick()">
-                        <i class="fas fa-handshake mr-2"></i>Comenzar Ahora
-                    </a>
-                </div>
-            </div>
-        </section>
-        
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">UBICACIÓN</h4>
-                        <p class="pre-wrap lead mb-0">Bogotá, Colombia
-Educación Digital Sin Fronteras</p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">SÍGUENOS</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-instagram"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="mb-4">ACERCA DE LIBRE ACADEMY</h4>
-                        <p class="pre-wrap lead mb-0">Educación digital sin riesgo para profesionales técnicos que quieren triunfar en Mercado Libre</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        
-        <!-- Copyright Section-->
-        <section class="copyright py-4 text-center text-white">
-            <div class="container">
-                <small class="pre-wrap">Este es un banner de experimentación para un trabajo de investigación con propósitos educativos. 
-No es un producto comercial y no se debe considerar como una oferta de servicios reales.</small>
-            </div>
-        </section>
-        
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-        <div class="scroll-to-top d-lg-none position-fixed">
-            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-                <i class="fa fa-chevron-up"></i>
-            </a>
         </div>
-        
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        
-        <!-- Custom tracking JS -->
-        <script>
-            // Tracking functions
-            function trackCTAClick(location) {
-                gtag('event', 'click', {
-                    event_category: 'engagement',
-                    event_label: 'cta_button',
-                    custom_parameter_1: location,
-                    custom_parameter_2: 'libre_academy_template'
-                });
-                console.log('CTA Click tracked:', location);
-            }
+    </nav>
 
-            function trackPlanClick(plan) {
-                gtag('event', 'click', {
-                    event_category: 'conversion',
-                    event_label: 'plan_selection',
-                    custom_parameter_1: plan,
-                    custom_parameter_2: 'libre_academy_template'
-                });
-                console.log('Plan click tracked:', plan);
-                alert(`¡Gracias por tu interés en el Plan ${plan}! Te contactaremos pronto.`);
-            }
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="masthead-avatar mb-5" style="font-size: 8rem;">👨‍💻</div>
+            <h1 class="masthead-heading mb-0">APRENDE VENTAS DIGITALES</h1>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p class="pre-wrap masthead-subheading font-weight-light mb-0">Sin Riesgo Financiero - Solo Pagas Cuando
+                Generas Resultados</p>
+            <div class="mt-4">
+                <a class="btn btn-outline-light btn-xl js-scroll-trigger" href="#planes"
+                    onclick="trackCTAClick('hero_main')">
+                    <i class="fas fa-rocket mr-2"></i>Ver Planes Disponibles
+                </a>
+            </div>
+        </div>
+    </header>
 
-            function trackContactClick() {
-                gtag('event', 'click', {
-                    event_category: 'engagement',
-                    event_label: 'contact_button',
-                    custom_parameter_1: 'contact_section',
-                    custom_parameter_2: 'libre_academy_template'
-                });
-                console.log('Contact click tracked');
-            }
-            
-            // Función para manejar el estado activo del menú
-            document.addEventListener('DOMContentLoaded', function() {
-                // Obtener todos los enlaces del menú
-                const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-                
-                // Función para remover la clase active de todos los enlaces
-                function removeActiveClasses() {
-                    navLinks.forEach(link => {
-                        link.classList.remove('active');
-                    });
-                }
-                
-                // Agregar event listener a cada enlace
-                navLinks.forEach(link => {
-                    link.addEventListener('click', function() {
-                        removeActiveClasses();
-                        this.classList.add('active');
-                    });
-                });
-                
-                // Detectar la sección visible actual y marcar el enlace correspondiente
-                const sections = document.querySelectorAll('section[id], header[id]');
-                
-                function updateActiveLink() {
-                    let currentSection = '';
-                    
-                    sections.forEach(section => {
-                        const rect = section.getBoundingClientRect();
-                        if (rect.top <= 100 && rect.bottom >= 100) {
-                            currentSection = section.getAttribute('id');
-                        }
-                    });
-                    
-                    // Si estamos en la parte superior, marcar como activo el enlace del inicio
-                    if (window.scrollY < 100) {
-                        currentSection = 'page-top';
-                    }
-                    
-                    // Actualizar clases active
-                    removeActiveClasses();
-                    if (currentSection) {
-                        const activeLink = document.querySelector(`.navbar-nav .nav-link[href="#${currentSection}"]`);
-                        if (activeLink) {
-                            activeLink.classList.add('active');
-                        }
-                    }
-                }
-                
-                // Ejecutar al cargar la página y al hacer scroll
-                updateActiveLink();
-                window.addEventListener('scroll', updateActiveLink);
+    <section class="page-section portfolio" id="beneficios">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="page-section-heading text-secondary mb-0 d-inline-block">¿POR QUÉ LIBRE ACADEMY?</h2>
+            </div>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-prop-card">
+                        <div class="value-prop-icon">💰</div>
+                        <h4>Sin Riesgo Financiero</h4>
+                        <p>Sin matrícula, sin mensualidades. Solo pagas cuando empieces a vender. Tu inversión está
+                            garantizada por tus propios resultados.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-prop-card">
+                        <div class="value-prop-icon">📈</div>
+                        <h4>Cobro por Resultados</h4>
+                        <p>15% de tus primeros $500 USD en ventas. Si no vendes, no pagas. Alineamos nuestro éxito con
+                            el tuyo.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-prop-card">
+                        <div class="value-prop-icon">🎯</div>
+                        <h4>Para Profesionales Técnicos</h4>
+                        <p>Cursos diseñados específicamente para ingenieros, desarrolladores y analistas que buscan
+                            diversificar ingresos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-primary text-white mb-0" id="como-funciona">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="page-section-heading d-inline-block text-white">¿CÓMO FUNCIONA?</h2>
+            </div>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center mb-4">
+                    <p class="pre-wrap lead">5 pasos simples hacia tu éxito en ventas digitales</p>
+                </div>
+            </div>
+            <div class="row container-steps">
+                <div class="col-lg-2 col-md-4 col-6 step-card">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p><strong>Te Inscribes</strong><br />100% gratis</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 step-card">
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p><strong>Aprendes</strong><br />Estrategias reales</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 step-card">
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p><strong>Implementas</strong><br />En Mercado Libre</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 step-card">
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <p><strong>Generas ventas</strong><br />Resultados reales</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 step-card">
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <p><strong>Pagas solo entonces</strong><br />15% de $500 USD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="guarantee">
+                <h3>🛡️ Garantía Total</h3>
+                <p>Si no generas al menos $500 USD en ventas en 6 meses, no pagas absolutamente nada.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" id="planes">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="page-section-heading text-secondary mb-0 d-inline-block">ELIGE TU PLAN</h2>
+            </div>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center mb-4">
+                    <p class="lead text-muted">Todos nuestros planes están diseñados para que solo pagues cuando generes
+                        resultados</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Plan Básico</h3>
+                            <div class="plan-price">15%</div>
+                            <div class="plan-price-detail">Solo de tus primeros $500 USD</div>
+                        </div>
+                        <div class="plan-body">
+                            <p class="text-muted mb-3">Perfecto para empezar. Aprende los fundamentos de las ventas
+                                digitales en Mercado Libre.</p>
+
+                            <ul class="plan-features">
+                                <li>Acceso a curso básico</li>
+                                <li>Soporte por email</li>
+                                <li>Comunidad de estudiantes</li>
+                                <li>Materiales descargables</li>
+                                <li>Garantía de resultados</li>
+                            </ul>
+
+                            <button class="btn btn-primary btn-block" onclick="trackPlanClick('basico')">
+                                Comenzar Ahora
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="plan-card featured">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Plan Profesional</h3>
+                            <div class="plan-price">20%</div>
+                            <div class="plan-price-detail">Solo de tus primeros $1000 USD</div>
+                        </div>
+                        <div class="plan-body">
+                            <p class="text-muted mb-3">Para quienes buscan resultados más ambiciosos. Incluye mentoría
+                                personalizada.</p>
+
+                            <ul class="plan-features">
+                                <li>Todo del Plan Básico</li>
+                                <li>Mentoría 1 a 1</li>
+                                <li>Soporte prioritario</li>
+                                <li>Casos de estudio avanzados</li>
+                                <li>Acceso a masterclasses</li>
+                                <li>Garantía extendida</li>
+                            </ul>
+
+                            <button class="btn btn-primary btn-block" onclick="trackPlanClick('profesional')">
+                                Elegir Profesional
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Plan Elite</h3>
+                            <div class="plan-price">25%</div>
+                            <div class="plan-price-detail">Solo de tus primeros $2000 USD</div>
+                        </div>
+                        <div class="plan-body">
+                            <p class="text-muted mb-3">Para profesionales que quieren maximizar sus ingresos con
+                                estrategias avanzadas.</p>
+
+                            <ul class="plan-features">
+                                <li>Todo del Plan Profesional</li>
+                                <li>Coaching grupal semanal</li>
+                                <li>Acceso VIP a recursos</li>
+                                <li>Red de contactos exclusiva</li>
+                                <li>Certificación profesional</li>
+                                <li>Soporte durante 12 meses</li>
+                            </ul>
+
+                            <button class="btn btn-primary btn-block" onclick="trackPlanClick('elite')">
+                                Acceder a Elite
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="page-section-heading text-secondary d-inline-block mb-0">CONTACTO</h2>
+            </div>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="text-muted">Teléfono</div>
+                        <div class="lead font-weight-bold">+57 (1) 234-5678</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
+                        <div class="text-muted">Email</div>
+                        <div class="lead font-weight-bold">info@libreacademy.com</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="icon-contact mb-3"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="text-muted">Ubicación</div>
+                        <div class="lead font-weight-bold">Bogotá, Colombia</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a class="btn btn-primary btn-xl" href="#planes" onclick="trackCTAClick('contact_section_cta')">
+                    <i class="fas fa-handshake mr-2"></i>Comenzar Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="mb-4">UBICACIÓN</h4>
+                    <p class="pre-wrap lead mb-0">Bogotá, Colombia
+                        Educación Digital Sin Fronteras</p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="mb-4">SÍGUENOS</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-instagram"></i></a>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="mb-4">ACERCA DE LIBRE ACADEMY</h4>
+                    <p class="pre-wrap lead mb-0">Educación digital sin riesgo para profesionales técnicos que quieren
+                        triunfar en Mercado Libre</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copyright py-4 text-center text-white">
+        <div class="container">
+            <small class="pre-wrap">Este es un banner de experimentación para un trabajo de investigación con propósitos
+                educativos.
+                No es un producto comercial y no se debe considerar como una oferta de servicios reales.</small>
+        </div>
+    </section>
+
+    <div class="scroll-to-top d-lg-none position-fixed">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        /**
+         * Funciones de seguimiento optimizadas para Google Analytics 4.
+         * Usamos eventos recomendados por Google para mejorar la calidad de los informes.
+         */
+
+        // Evento para clics en Llamados a la Acción (Call to Action)
+        function trackCTAClick(cta_location) {
+            gtag('event', 'select_content', {
+                content_type: 'cta_button',
+                content_id: cta_location // ej: 'hero_main' o 'contact_section_cta'
             });
-        </script>
-    </body>
+            console.log('GA4 Event: select_content, Location:', cta_location);
+        }
+
+        // Evento para cuando un usuario elige un plan (inicio de conversión)
+        function trackPlanClick(plan_id) {
+            // Objeto para mapear IDs de planes a información detallada
+            const planDetails = {
+                'basico': { name: 'Plan Básico', price: 75 }, // 15% de 500
+                'profesional': { name: 'Plan Profesional', price: 200 }, // 20% de 1000
+                'elite': { name: 'Plan Elite', price: 500 } // 25% de 2000
+            };
+
+            const plan = planDetails[plan_id];
+            if (!plan) {
+                console.error('Plan no encontrado:', plan_id);
+                return;
+            }
+
+            gtag('event', 'begin_checkout', {
+                currency: 'USD',
+                value: plan.price,
+                items: [{
+                    item_id: plan_id,
+                    item_name: plan.name,
+                    price: plan.price,
+                    quantity: 1
+                }]
+            });
+
+            console.log(`GA4 Event: begin_checkout, Plan: ${plan.name}, Value: ${plan.price}`);
+            // Se recomienda no usar 'alert' en un sitio en producción.
+            alert(`¡Gracias por tu interés en el ${plan.name}! Te contactaremos pronto.`);
+        }
+
+        // Función para manejar el estado activo del menú
+        document.addEventListener('DOMContentLoaded', function () {
+            // Obtener todos los enlaces del menú
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+            // Función para remover la clase active de todos los enlaces
+            function removeActiveClasses() {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+            }
+
+            // Agregar event listener a cada enlace
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    removeActiveClasses();
+                    this.classList.add('active');
+                });
+            });
+
+            // Detectar la sección visible actual y marcar el enlace correspondiente
+            const sections = document.querySelectorAll('section[id], header[id]');
+
+            function updateActiveLink() {
+                let currentSection = '';
+
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= 100 && rect.bottom >= 100) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                // Si estamos en la parte superior, marcar como activo el enlace del inicio
+                if (window.scrollY < 100) {
+                    currentSection = 'page-top';
+                }
+
+                // Actualizar clases active
+                removeActiveClasses();
+                if (currentSection) {
+                    const activeLink = document.querySelector(`.navbar-nav .nav-link[href="#${currentSection}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            }
+
+            // Ejecutar al cargar la página y al hacer scroll
+            updateActiveLink();
+            window.addEventListener('scroll', updateActiveLink);
+        });
+    </script>
+</body>
+
 </html>
