@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Libre Academy - Aprende Sin Riesgo</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0VGS31W5KF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0VGS31W5KF');
+    </script>
+    
     <style>
       body {
         margin: 0;
@@ -175,6 +185,8 @@
         cursor: pointer;
         transition: transform 0.3s ease;
         margin: 20px 0;
+        text-decoration: none;
+        display: inline-block;
       }
 
       .cta:hover {
@@ -261,9 +273,14 @@
         </div>
 
         <div class="guarantee">
-          <h3>🛡️ Garantía Total </h3>
+          <h3>🛡️ Garantía Total</h3>
           <p>Si no generas al menos $500 USD en ventas en 6 meses, no pagas absolutamente nada.</p>
         </div>
+
+        <!-- Botón CTA con tracking -->
+        <a href="planes.html" class="cta" onclick="trackPlanesClick()" id="verPlanesBtn">
+          📋 Ver Planes Disponibles
+        </a>
       </div>
 
       <div class="footer-note">
@@ -272,5 +289,28 @@
         reales.
       </div>
     </div>
+
+    <script>
+      // Función para hacer tracking del click en el botón
+      function trackPlanesClick() {
+        // Tracking con Google Analytics 4
+        gtag('event', 'click', {
+          event_category: 'engagement',
+          event_label: 'ver_planes_button',
+          custom_parameter_1: 'banner_main_page',
+          custom_parameter_2: 'libre_academy'
+        });
+        
+        // También puedes usar eventos personalizados más específicos
+        gtag('event', 'ver_planes_clicked', {
+          page_location: window.location.href,
+          page_title: document.title,
+          timestamp: new Date().toISOString()
+        });
+        
+        // Log en consola para debugging (remueve en producción)
+        console.log('Evento tracking enviado: ver_planes_clicked');
+      }
+    </script>
   </body>
 </html>
